@@ -10,9 +10,13 @@ import java.awt.Color;
 
 public class ArtikelPanel extends JPanel {
 
-	/**
-	 * Create the panel.
-	 */
+	private JPanel panArtikel;
+	private JLabel lblArtBild;
+	private JLabel lblArtBezeichnung;
+	private JLabel lblArtBeschreibung;
+	private JButton btnZuWarenkorb;
+	private JLabel lblPreis;
+	
 	public ArtikelPanel() {
 		setBackground(new Color(255, 255, 255));
 		setLayout(null);
@@ -46,5 +50,53 @@ public class ArtikelPanel extends JPanel {
 		lblPreis.setBounds(675, 108, 115, 25);
 		panArtikel.add(lblPreis);
 
+	}
+
+	public JPanel getPanArtikel() {
+		return panArtikel;
+	}
+
+	public void setPanArtikel(JPanel panArtikel) {
+		this.panArtikel = panArtikel;
+	}
+
+	public JLabel getLblArtBild() {
+		return lblArtBild;
+	}
+
+	public void setLblArtBild(JLabel lblArtBild) {
+		this.lblArtBild = lblArtBild;
+	}
+
+	public JLabel getLblArtBezeichnung() {
+		return lblArtBezeichnung;
+	}
+
+	public void setLblArtBezeichnung(JLabel lblArtBezeichnung) {
+		this.lblArtBezeichnung = lblArtBezeichnung;
+	}
+
+	public JLabel getLblArtBeschreibung() {
+		return lblArtBeschreibung;
+	}
+
+	public void setLblArtBeschreibung(JLabel lblArtBeschreibung) {
+		this.lblArtBeschreibung = lblArtBeschreibung;
+	}
+
+	public JButton getBtnZuWarenkorb() {
+		return btnZuWarenkorb;
+	}
+
+	public void setBtnZuWarenkorb(JButton btnZuWarenkorb) {
+		this.btnZuWarenkorb = btnZuWarenkorb;
+	}
+
+	public JLabel getLblPreis() {
+		return lblPreis;
+	}
+
+	public void setLblPreis(JLabel lblPreis) {
+		this.lblPreis = lblPreis;
 	}
 }

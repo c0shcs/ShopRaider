@@ -13,6 +13,10 @@ import javax.swing.SwingConstants;
 import javax.swing.JSeparator;
 public class SideBar extends JPanel {
 
+	private JPanel panSideBar;
+	private JLabel lblKategorieLabel;
+	private JMenu mnKat01Menu;
+	private JMenuItem mntmKat01Comp;
 
 	public SideBar() {
 		setBackground(new Color(240, 240, 240));
@@ -75,5 +79,37 @@ public class SideBar extends JPanel {
 		panSideBar.add(separator);
 		
 		
+	}
+
+	public JPanel getPanSideBar() {
+		return panSideBar;
+	}
+
+	public void setPanSideBar(JPanel panSideBar) {
+		this.panSideBar = panSideBar;
+	}
+
+	public JLabel getLblKategorieLabel() {
+		return lblKategorieLabel;
+	}
+
+	public void setLblKategorieLabel(JLabel lblKategorieLabel) {
+		this.lblKategorieLabel = lblKategorieLabel;
+	}
+
+	public JMenu getMnKat01Menu() {
+		return mnKat01Menu;
+	}
+
+	public void setMnKat01Menu(JMenu mnKat01Menu) {
+		this.mnKat01Menu = mnKat01Menu;
+	}
+
+	public JMenuItem getMntmKat01Comp() {
+		return mntmKat01Comp;
+	}
+
+	public void setMntmKat01Comp(JMenuItem mntmKat01Comp) {
+		this.mntmKat01Comp = mntmKat01Comp;
 	}
 }
