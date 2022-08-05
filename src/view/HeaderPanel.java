@@ -23,6 +23,71 @@ public class HeaderPanel extends JPanel {
 	private JButton btnSuchen;
 	
 	
+	public JPanel getPanHeadBar() {
+		return panHeadBar;
+	}
+
+	public void setPanHeadBar(JPanel panHeadBar) {
+		this.panHeadBar = panHeadBar;
+	}
+
+	public JPanel getPanHeader() {
+		return panHeader;
+	}
+
+	public void setPanHeader(JPanel panHeader) {
+		this.panHeader = panHeader;
+	}
+
+	public JLabel getLabLogo() {
+		return LabLogo;
+	}
+
+	public void setLabLogo(JLabel labLogo) {
+		LabLogo = labLogo;
+	}
+
+	public JTextField getTextFSuchen() {
+		return textFSuchen;
+	}
+
+	public void setTextFSuchen(JTextField textFSuchen) {
+		this.textFSuchen = textFSuchen;
+	}
+
+	public JButton getBtnStartseite() {
+		return btnStartseite;
+	}
+
+	public void setBtnStartseite(JButton btnStartseite) {
+		this.btnStartseite = btnStartseite;
+	}
+
+	public JButton getBtnWarenkorb() {
+		return btnWarenkorb;
+	}
+
+	public void setBtnWarenkorb(JButton btnWarenkorb) {
+		this.btnWarenkorb = btnWarenkorb;
+	}
+
+	public JButton getBtnKasse() {
+		return btnKasse;
+	}
+
+	public void setBtnKasse(JButton btnKasse) {
+		this.btnKasse = btnKasse;
+	}
+
+	public JButton getBtnSuchen() {
+		return btnSuchen;
+	}
+
+	public void setBtnSuchen(JButton btnSuchen) {
+		this.btnSuchen = btnSuchen;
+	}
+	
+	
 	public HeaderPanel() {
 		super.setBounds(0, 0, 1024, 100);
 		this.setBorder(getBorder());
@@ -38,7 +103,7 @@ public class HeaderPanel extends JPanel {
 		LabLogo.setIcon(new ImageIcon("C:\\Users\\mcwoh\\eclipse-workspace\\c0shop\\source\\SR Logo t.png"));
 		LabLogo.setOpaque(true);
 		LabLogo.setForeground(Color.BLACK);
-		LabLogo.setBackground(Color.LIGHT_GRAY);
+		LabLogo.setBackground(new Color(192, 192, 192));
 		LabLogo.setBounds(5, 5, 120, 52);
 		panHeader.add(LabLogo);
 		
@@ -69,102 +134,4 @@ public class HeaderPanel extends JPanel {
 		
 		
 	}
-
-
-
-	public JPanel getPanHeadBar() {
-		return panHeadBar;
-	}
-
-
-
-	public void setPanHeadBar(JPanel panHeadBar) {
-		this.panHeadBar = panHeadBar;
-	}
-
-
-
-	public JPanel getPanHeader() {
-		return panHeader;
-	}
-
-
-
-	public void setPanHeader(JPanel panHeader) {
-		this.panHeader = panHeader;
-	}
-
-
-
-	public JLabel getLabLogo() {
-		return LabLogo;
-	}
-
-
-
-	public void setLabLogo(JLabel labLogo) {
-		LabLogo = labLogo;
-	}
-
-
-
-	public JTextField getTextFSuchen() {
-		return textFSuchen;
-	}
-
-
-
-	public void setTextFSuchen(JTextField textFSuchen) {
-		this.textFSuchen = textFSuchen;
-	}
-
-
-
-	public JButton getBtnStartseite() {
-		return btnStartseite;
-	}
-
-
-
-	public void setBtnStartseite(JButton btnStartseite) {
-		this.btnStartseite = btnStartseite;
-	}
-
-
-
-	public JButton getBtnWarenkorb() {
-		return btnWarenkorb;
-	}
-
-
-
-	public void setBtnWarenkorb(JButton btnWarenkorb) {
-		this.btnWarenkorb = btnWarenkorb;
-	}
-
-
-
-	public JButton getBtnKasse() {
-		return btnKasse;
-	}
-
-
-
-	public void setBtnKasse(JButton btnKasse) {
-		this.btnKasse = btnKasse;
-	}
-
-
-
-	public JButton getBtnSuchen() {
-		return btnSuchen;
-	}
-
-
-
-	public void setBtnSuchen(JButton btnSuchen) {
-		this.btnSuchen = btnSuchen;
-	}
-
-
 }

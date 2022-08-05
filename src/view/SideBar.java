@@ -18,10 +18,46 @@ public class SideBar extends JPanel {
 	private JMenu mnKat01Menu;
 	private JMenuItem mntmKat01Comp;
 
+	
+	
+	public JPanel getPanSideBar() {
+		return panSideBar;
+	}
+
+	public void setPanSideBar(JPanel panSideBar) {
+		this.panSideBar = panSideBar;
+	}
+
+	public JLabel getLblKategorieLabel() {
+		return lblKategorieLabel;
+	}
+
+	public void setLblKategorieLabel(JLabel lblKategorieLabel) {
+		this.lblKategorieLabel = lblKategorieLabel;
+	}
+
+	public JMenu getMnKat01Menu() {
+		return mnKat01Menu;
+	}
+
+	public void setMnKat01Menu(JMenu mnKat01Menu) {
+		this.mnKat01Menu = mnKat01Menu;
+	}
+
+	public JMenuItem getMntmKat01Comp() {
+		return mntmKat01Comp;
+	}
+
+	public void setMntmKat01Comp(JMenuItem mntmKat01Comp) {
+		this.mntmKat01Comp = mntmKat01Comp;
+	}
+	
+	
+	
 	public SideBar() {
 		setBackground(new Color(240, 240, 240));
 		setBounds(100, 100, 57, 400);
-		super.setPreferredSize(new Dimension(110,400));
+		super.setPreferredSize(new Dimension(120,400));
 		setLayout(null);
 		
 		JPanel panSideBar = new JPanel();
@@ -81,35 +117,5 @@ public class SideBar extends JPanel {
 		
 	}
 
-	public JPanel getPanSideBar() {
-		return panSideBar;
-	}
-
-	public void setPanSideBar(JPanel panSideBar) {
-		this.panSideBar = panSideBar;
-	}
-
-	public JLabel getLblKategorieLabel() {
-		return lblKategorieLabel;
-	}
-
-	public void setLblKategorieLabel(JLabel lblKategorieLabel) {
-		this.lblKategorieLabel = lblKategorieLabel;
-	}
-
-	public JMenu getMnKat01Menu() {
-		return mnKat01Menu;
-	}
-
-	public void setMnKat01Menu(JMenu mnKat01Menu) {
-		this.mnKat01Menu = mnKat01Menu;
-	}
-
-	public JMenuItem getMntmKat01Comp() {
-		return mntmKat01Comp;
-	}
-
-	public void setMntmKat01Comp(JMenuItem mntmKat01Comp) {
-		this.mntmKat01Comp = mntmKat01Comp;
-	}
+	
 }
