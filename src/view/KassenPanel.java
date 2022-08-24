@@ -23,13 +23,13 @@ public class KassenPanel extends JPanel {
 	private JTextField textPlz;
 	private JTextField textOrt;
 	private JTextField textLand;
-	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	private JTextField textField_11;
-	private JTextField textField_12;
-	private JTextField textField_13;
+	private JTextField textLieferName;
+	private JTextField textLieferVorname;
+	private JTextField textLieferStrasse;
+	private JTextField textLieferHausNr;
+	private JTextField textLieferPlz;
+	private JTextField textLieferOrt;
+	private JTextField textLieferLand;
 
 	/**
 	 * Create the panel.
@@ -152,82 +152,82 @@ public class KassenPanel extends JPanel {
 		panelLieferAddressfeld.setBounds(5, 190, 340, 130);
 		panelAddressfeldRamen.add(panelLieferAddressfeld);
 		
-		JLabel lblAddName_1 = new JLabel("Name");
-		lblAddName_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddName_1.setBackground(Color.GRAY);
-		lblAddName_1.setBounds(3, 5, 50, 20);
-		panelLieferAddressfeld.add(lblAddName_1);
+		JLabel lblLieferName = new JLabel("Name");
+		lblLieferName.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferName.setBackground(Color.GRAY);
+		lblLieferName.setBounds(3, 5, 50, 20);
+		panelLieferAddressfeld.add(lblLieferName);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(30);
-		textField_7.setBounds(55, 5, 280, 20);
-		panelLieferAddressfeld.add(textField_7);
+		textLieferName = new JTextField();
+		textLieferName.setColumns(30);
+		textLieferName.setBounds(55, 5, 280, 20);
+		panelLieferAddressfeld.add(textLieferName);
 		
-		JLabel lblAddVorname_1 = new JLabel("Vorname");
-		lblAddVorname_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddVorname_1.setBackground(Color.GRAY);
-		lblAddVorname_1.setBounds(3, 30, 50, 20);
-		panelLieferAddressfeld.add(lblAddVorname_1);
+		JLabel lblLieferVorname = new JLabel("Vorname");
+		lblLieferVorname.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferVorname.setBackground(Color.GRAY);
+		lblLieferVorname.setBounds(3, 30, 50, 20);
+		panelLieferAddressfeld.add(lblLieferVorname);
 		
-		textField_8 = new JTextField();
-		textField_8.setColumns(30);
-		textField_8.setBounds(55, 30, 280, 20);
-		panelLieferAddressfeld.add(textField_8);
+		textLieferVorname = new JTextField();
+		textLieferVorname.setColumns(30);
+		textLieferVorname.setBounds(55, 30, 280, 20);
+		panelLieferAddressfeld.add(textLieferVorname);
 		
-		JLabel lblAddStrasse_1 = new JLabel("Strasse");
-		lblAddStrasse_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddStrasse_1.setBackground(Color.GRAY);
-		lblAddStrasse_1.setBounds(3, 55, 50, 20);
-		panelLieferAddressfeld.add(lblAddStrasse_1);
+		JLabel lblLieferStrasse = new JLabel("Strasse");
+		lblLieferStrasse.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferStrasse.setBackground(Color.GRAY);
+		lblLieferStrasse.setBounds(3, 55, 50, 20);
+		panelLieferAddressfeld.add(lblLieferStrasse);
 		
-		textField_9 = new JTextField();
-		textField_9.setColumns(25);
-		textField_9.setBounds(55, 55, 210, 20);
-		panelLieferAddressfeld.add(textField_9);
+		textLieferStrasse = new JTextField();
+		textLieferStrasse.setColumns(25);
+		textLieferStrasse.setBounds(55, 55, 210, 20);
+		panelLieferAddressfeld.add(textLieferStrasse);
 		
-		JLabel lblAddNr_1 = new JLabel("Nr:");
-		lblAddNr_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddNr_1.setBackground(Color.GRAY);
-		lblAddNr_1.setBounds(270, 55, 20, 20);
-		panelLieferAddressfeld.add(lblAddNr_1);
+		JLabel lblLieferNr = new JLabel("Nr:");
+		lblLieferNr.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferNr.setBackground(Color.GRAY);
+		lblLieferNr.setBounds(270, 55, 20, 20);
+		panelLieferAddressfeld.add(lblLieferNr);
 		
-		textField_10 = new JTextField();
-		textField_10.setColumns(14);
-		textField_10.setBounds(295, 55, 40, 20);
-		panelLieferAddressfeld.add(textField_10);
+		textLieferHausNr = new JTextField();
+		textLieferHausNr.setColumns(14);
+		textLieferHausNr.setBounds(295, 55, 40, 20);
+		panelLieferAddressfeld.add(textLieferHausNr);
 		
-		JLabel lblAddPlz_1 = new JLabel("PLZ");
-		lblAddPlz_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddPlz_1.setBackground(Color.GRAY);
-		lblAddPlz_1.setBounds(3, 80, 50, 20);
-		panelLieferAddressfeld.add(lblAddPlz_1);
+		JLabel lblLieferPlz = new JLabel("PLZ");
+		lblLieferPlz.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferPlz.setBackground(Color.GRAY);
+		lblLieferPlz.setBounds(3, 80, 50, 20);
+		panelLieferAddressfeld.add(lblLieferPlz);
 		
-		textField_11 = new JTextField();
-		textField_11.setColumns(8);
-		textField_11.setBounds(55, 80, 90, 20);
-		panelLieferAddressfeld.add(textField_11);
+		textLieferPlz = new JTextField();
+		textLieferPlz.setColumns(8);
+		textLieferPlz.setBounds(55, 80, 90, 20);
+		panelLieferAddressfeld.add(textLieferPlz);
 		
-		JLabel lblAddOrt_1 = new JLabel("Ort");
-		lblAddOrt_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddOrt_1.setBackground(Color.GRAY);
-		lblAddOrt_1.setBounds(150, 80, 20, 20);
-		panelLieferAddressfeld.add(lblAddOrt_1);
+		JLabel lblLieferOrt = new JLabel("Ort");
+		lblLieferOrt.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferOrt.setBackground(Color.GRAY);
+		lblLieferOrt.setBounds(150, 80, 20, 20);
+		panelLieferAddressfeld.add(lblLieferOrt);
 		
-		textField_12 = new JTextField();
-		textField_12.setColumns(10);
-		textField_12.setBounds(175, 80, 160, 20);
-		panelLieferAddressfeld.add(textField_12);
+		textLieferOrt = new JTextField();
+		textLieferOrt.setColumns(10);
+		textLieferOrt.setBounds(175, 80, 160, 20);
+		panelLieferAddressfeld.add(textLieferOrt);
 		
-		JLabel lblAddLand_1 = new JLabel("Land");
-		lblAddLand_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAddLand_1.setBackground(Color.GRAY);
-		lblAddLand_1.setBounds(3, 105, 50, 20);
-		panelLieferAddressfeld.add(lblAddLand_1);
+		JLabel lblLieferLand = new JLabel("Land");
+		lblLieferLand.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLieferLand.setBackground(Color.GRAY);
+		lblLieferLand.setBounds(3, 105, 50, 20);
+		panelLieferAddressfeld.add(lblLieferLand);
 		
-		textField_13 = new JTextField();
-		textField_13.setColumns(10);
-		textField_13.setBounds(55, 105, 280, 20);
-		panelLieferAddressfeld.add(textField_13);
+		textLieferLand = new JTextField();
+		textLieferLand.setColumns(10);
+		textLieferLand.setBounds(55, 105, 280, 20);
+		panelLieferAddressfeld.add(textLieferLand);
 		
 		JCheckBox chckbxLieferaddresse = new JCheckBox("Fals Abweichend bitte ankreutzen: ");
 		chckbxLieferaddresse.setFont(new Font("Tahoma", Font.PLAIN, 8));
