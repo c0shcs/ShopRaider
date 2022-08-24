@@ -56,7 +56,7 @@ public class SideBar extends JPanel {
 	
 	public SideBar() {
 		setBackground(new Color(240, 240, 240));
-		setBounds(100, 100, 57, 400);
+		setBounds(100, 100, 120, 400);
 		super.setPreferredSize(new Dimension(120,400));
 		setLayout(null);
 		

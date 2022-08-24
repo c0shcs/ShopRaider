@@ -12,6 +12,8 @@ import javax.swing.SwingConstants;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JCheckBox;
+import java.awt.Component;
+import javax.swing.Box;
 
 public class KassenPanel extends JPanel {
 	private JTextField textName;
@@ -38,7 +40,7 @@ public class KassenPanel extends JPanel {
 		
 		JPanel panelAddressfeldRamen = new JPanel();
 		panelAddressfeldRamen.setBackground(new Color(255, 255, 255));
-		panelAddressfeldRamen.setBounds(0, 0, 668, 325);
+		panelAddressfeldRamen.setBounds(0, 256, 668, 325);
 		add(panelAddressfeldRamen);
 		panelAddressfeldRamen.setLayout(null);
 		
@@ -232,6 +234,32 @@ public class KassenPanel extends JPanel {
 		chckbxLieferaddresse.setBackground(Color.WHITE);
 		chckbxLieferaddresse.setBounds(195, 167, 150, 25);
 		panelAddressfeldRamen.add(chckbxLieferaddresse);
+		
+		JPanel KassenListe = new JPanel();
+		KassenListe.setBackground(new Color(255, 255, 255));
+		KassenListe.setBounds(0, 0, 668, 255);
+		add(KassenListe);
+		KassenListe.setLayout(null);
+		
+		JLabel lblKasse = new JLabel("Kasse:");
+		lblKasse.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblKasse.setBounds(5, 5, 227, 25);
+		KassenListe.add(lblKasse);
+		
+		Component horizontalStrutKassenListe03 = Box.createHorizontalStrut(20);
+		horizontalStrutKassenListe03.setBackground(Color.GRAY);
+		horizontalStrutKassenListe03.setBounds(5, 149, 658, 12);
+		KassenListe.add(horizontalStrutKassenListe03);
+		
+		Component horizontalStrutKassenListe01 = Box.createHorizontalStrut(20);
+		horizontalStrutKassenListe01.setBackground(new Color(128, 128, 128));
+		horizontalStrutKassenListe01.setBounds(5, 30, 658, 12);
+		KassenListe.add(horizontalStrutKassenListe01);
+		
+		Component horizontalStrutKassenListe02 = Box.createHorizontalStrut(20);
+		horizontalStrutKassenListe02.setBackground(Color.GRAY);
+		horizontalStrutKassenListe02.setBounds(5, 110, 658, 12);
+		KassenListe.add(horizontalStrutKassenListe02);
 
 	}
 }
