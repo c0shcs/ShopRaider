@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import java.awt.Panel;
 import java.awt.Label;
 import java.awt.Button;
+import java.awt.CardLayout;
 
 public class testFlaeche extends JPanel {
 
@@ -31,15 +32,16 @@ public class testFlaeche extends JPanel {
 		Panel panelAWT = new Panel();
 		panelAWT.setBounds(10, 144, 430, 146);
 		add(panelAWT);
+		panelAWT.setLayout(new CardLayout(0, 0));
 		
 		Label labelAWT = new Label("New label AWT");
-		panelAWT.add(labelAWT);
+		panelAWT.add(labelAWT, "name_13429856463800");
 		
 		Button buttonAWT = new Button("New button AWT");
-		panelAWT.add(buttonAWT);
+		panelAWT.add(buttonAWT, "name_13429906735400");
 
 		
-		
+		//was zur hölle
 		
 	}
 }
