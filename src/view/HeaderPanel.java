@@ -100,7 +100,7 @@ public class HeaderPanel extends JPanel {
 		
 		JLabel LabLogo = new JLabel("ShopRaider");
 		LabLogo.setHorizontalAlignment(SwingConstants.CENTER);
-		LabLogo.setIcon(new ImageIcon("C:\\Users\\mcwoh\\eclipse-workspace\\c0shop\\source\\SR Logo t.png"));
+		LabLogo.setIcon(new ImageIcon("/SR Logo t.png"));
 		LabLogo.setOpaque(true);
 		LabLogo.setForeground(Color.BLACK);
 		LabLogo.setBackground(new Color(192, 192, 192));
